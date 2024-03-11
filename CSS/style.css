@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html{
+    font-size:20px;
+}
+
+body{
+    background-color:#353b48;
+    padding:1rem;
+}
+
+.control{
+    height:100px;
+    max-width:1200px;
+    margin:1% auto;
+    padding:10px 0px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.control input{
+margin:5px;
+width:80%;
+height:40%;
+border-radius:5px;
+padding:6px;
+outline:none;
+border:2px solid #00b894;
+}
+
+
+.control .btn-group{
+    margin-top:20px;
+    margin-bottom:20px;
+    
+}
+.btn-group button{
+    width:100px;
+    height:30px;
+    border:none;
+    background-color:#00b894;
+    color:white;
+    font-size:0.7rem;
+    margin:5px;
+    border-radius:5px;
+    border:2px solid #00b894;
+    cursor:pointer;
+    transition:0.4s;
+}
+
+.btn-group button:hover,
+.btn-group .btn-clicked{
+    background-color:#353b48;
+
+}
+
+.box{
+    height:10rem;
+    width:10rem;
+    border:5px solid white;
+    border-radius:5px;
+    overflow:hidden;
+}
+
+.box img{
+    width:100%;
+    height:100%;
+    object-fit:cover; 
+    transition:0.5s;
+    transform-origin:top;
+}
+
+.box img:hover{
+transform:scale(1.5);
+}
+
+.container{
+     max-width:1200px;   /* large screen device size is 1200 */
+     margin:6% auto;
+     display:grid;
+     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+     gap:2rem;
+     
+}
+
+@media(max-width:516px){
+    .btn-group button{
+        width:60px;
+        height:20px;
+        border:2px solid #00b894;
+        font-size:0.5rem;
+    }
+    .control input{
+        margin:3px;
+        width:100%;
+        height:30%;
+        border-radius:5px;
+        padding:6px;
+        }
+
+}
+
+@media(max-width:336px){
+    
+    .btn-group button{
+        width:55px;
+        height:18px;
+        border:2px solid #00b894;
+        font-size:0.4rem;
+       
+    }
+
+    .control input{
+        margin:3px;
+        width:100px;
+        height:30%;
+        border-radius:5px;
+        padding:6px;
+        }
+
+    .container{
+       
+        margin:10% auto;
+     
+        
+        
+   }
+   
+}
+
+
